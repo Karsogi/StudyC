@@ -1,1 +1,4 @@
-CMakeLists.txt not found in C:\Users\Asus\CLionProjects\Homework Select CMakeLists.txt
+"D:\IDE\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S D:\PROFI\StudyC -B D:\PROFI\StudyC\cmake-build-debug
+-- Configuring done (0.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: D:/PROFI/StudyC/cmake-build-debug
