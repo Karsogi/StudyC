@@ -59,8 +59,6 @@ int main() {
         cout << 4;
     } else if (number == "five") {
         cout << 5;
-    } else if (number == "five") {
-        cout << 5;
     } else if (number == "six") {
         cout << 6;
     } else if (number == "seven") {
