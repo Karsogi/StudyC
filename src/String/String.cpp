@@ -14,7 +14,7 @@ int main() {
     cout << word[0] << '\n';
     cout << "'" << word.back() << "'" << ' ' << '\n' << size << '\n' << '"' << word[middleSize] << "\"" << '\n'; // \ is used in escape sequences
     cout << "[" << word << "]" << '\n';
-    reverse(word.begin(), word.end());
+    ranges::reverse(word);
     cout << word;
     return 0;
 }
