@@ -1,8 +1,0 @@
-D:/PROFI/StudyC/cmake-build-debug/CMakeFiles/Guess.dir
-D:/PROFI/StudyC/cmake-build-debug/CMakeFiles/EqualSequences.dir
-D:/PROFI/StudyC/cmake-build-debug/CMakeFiles/CheckName.dir
-D:/PROFI/StudyC/cmake-build-debug/CMakeFiles/Prime.dir
-D:/PROFI/StudyC/cmake-build-debug/CMakeFiles/String.dir
-D:/PROFI/StudyC/cmake-build-debug/CMakeFiles/Digit.dir
-D:/PROFI/StudyC/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/PROFI/StudyC/cmake-build-debug/CMakeFiles/rebuild_cache.dir
