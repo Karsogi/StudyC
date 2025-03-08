@@ -19,7 +19,6 @@ auto main() -> int {
         int n;
         cin >> n;
         sequence.push_back(n);
-
     }
 
     // for (int i = 0; i < sequenceLength; ++i) {

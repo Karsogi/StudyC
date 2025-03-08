@@ -11,10 +11,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Add the executable target
 add_executable(Guess src/Guess/Guess.cpp)
 add_executable(EqualSequences src/EqualSequences/EqualSequences.cpp)
-add_executable(CheckName src/CheckName/CheckName.cpp
-        src/Test/test.cpp
-        "src/Sum of two numbers/Sum of two numbers.cpp"
-        src/boxPrint/boxPrint.cpp)
+add_executable(CheckName src/CheckName/CheckName.cpp)
+add_executable(Test src/Test/test.cpp)
+add_executable(SumOfTwoNumbers src/SumOfTwoNumbers/SumOfTwoNumbers.cpp)
+add_executable(BoxPrint src/BoxPrint/BoxPrint.cpp)
 add_executable(Prime src/Prime/Prime.cpp)
 add_executable(String src/String/String.cpp)
 add_executable(Digit src/Digit/Digit.cpp)
+add_executable(PassByRefVsPassByVal src/PassByRevVsPassByVal/Main.cpp)
