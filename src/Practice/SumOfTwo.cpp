@@ -1,6 +1,8 @@
 //
 // Created by Asus on 9.03.2025.
 //
+#include <thread>
+#include <chrono>
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -23,7 +25,8 @@ bool sumOfTwo(vector<int> &vectorian, const int value) {
         }
     }
     if (sum == value) {
-        cout << vectorian[end] << " " <<  vectorian[start] << '\n';
+        cout << vectorian[end] << " " << vectorian[start] << '\n';
+//        std::this_thread::sleep_for(std::chrono::seconds(15));
         return true;
     }
     return false;
@@ -33,6 +36,11 @@ bool sumOfTwo(vector<int> &vectorian, const int value) {
 auto main() -> int {
     auto vectorio = vector<int>{20, 5, 1};
     const auto value = 21;
-    sumOfTwo(vectorio, value);
-  cout << sumOfTwo(vectorio, value);
+//    if (sumOfTwo(vectorio, value) == true) {
+//        bool t = true;
+//    } else {
+//        bool t = false;
+//        cout << t << '\n';
+//    }
+    cout << sumOfTwo(vectorio, value) << '\n';
 }
