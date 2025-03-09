@@ -36,5 +36,6 @@ auto main() -> int
     const auto nums = std::vector{2, 4, 5, 8, 9, 11, 13, 15};
     constexpr auto target = 4;
 
+
     cout << sumOfTwo(nums, target);
 }
