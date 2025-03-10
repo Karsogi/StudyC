@@ -7,7 +7,7 @@ using namespace std;
  bool compare(vector<double>& vectoria, vector<double>& vasya){
      auto last = vectoria.size() -1;
      auto last1 = vasya.size() -1;
-    if (vectoria[last]>vasya[last1]){
+    if (vectoria[last]<vasya[last1]){
         return true;
     }
     return false;
