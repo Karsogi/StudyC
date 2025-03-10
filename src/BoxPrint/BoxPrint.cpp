@@ -18,12 +18,14 @@ void boxPrint(const vector<string> &text, char border = '*') {
     for (auto i = 0; i < text.size(); i++) {
         for (auto j = 0; j < 1; j++) {
 
-            cout << border << text[i] << border << '\n';
+
+            cout << border << text[i] << string (greatest - text[i].size(), ' ') << border << '\n';
         }
     }
     for (auto i = 0; i < greatest + 2; i++) {
         cout << border;
     }
+    cout << '\n';
 }
 
 auto main() -> int {
