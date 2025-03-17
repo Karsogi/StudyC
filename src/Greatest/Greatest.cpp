@@ -15,7 +15,7 @@ bool suffix(vector<int> &almaz, set<int> &brilliant) {
     if (checki.size() != almaz.size()) {
         return false;
     }
-    for (size_t i = 0; i < almaz.size(); ++i) {
+    for (auto i = 0; i < almaz.size(); ++i) {
         if (almaz[i] != checki[i]) {
             return false;
         }

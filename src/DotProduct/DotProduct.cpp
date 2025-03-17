@@ -9,18 +9,18 @@ using namespace std;
 
 int DotProduct(vector<int> &vaski, vector<int> &elisabethy) {
     assert(vaski.size() == elisabethy.size());
-    cout << "Comerade assertion has passed!"<< '\n';
+    cout << "Comerade assertion has passed!" << '\n';
 //    for (int i = 0; i < vaski.size(); ++i) {
 //        for (int j = 0; j < 1; ++j) {
-            auto count = 0;
-            auto a = 0;
-            auto b = 0;
-            while (count != vaski.size()) {
-           a =  vaski[count] * elisabethy[count];
-           a>0 ? b= b+a : b=b-a;
-           count++;
-           }
-            return b;
+    auto count = 0;
+    auto a = 0;
+    auto b = 0;
+    while (count != vaski.size()) {
+        a = vaski[count] * elisabethy[count];
+        a > 0 ? b = b + a : b = b - a;
+        count++;
+    }
+    return b;
 //        }
 //    }
 }
@@ -40,5 +40,5 @@ auto main() -> int {
         cin >> n;
         elisabeth.push_back(n);
     }
-    cout << DotProduct(vasyan,elisabeth);
+    cout << DotProduct(vasyan, elisabeth);
 }

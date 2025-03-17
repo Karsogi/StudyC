@@ -13,14 +13,14 @@ using namespace std;
 bool sumOfTwo(vector<int> &vectorian, const int value) {
     auto end = vectorian.size() - 1;
     auto start = 0;
-    auto sum = vectorian[start] + vectorian[end];
     sort(vectorian.begin(), vectorian.end());
+    auto sum = vectorian[start] + vectorian[end];
     while (sum != value && start != end) {
         if (sum > value) {
-            start++;
+            end--;
             sum = vectorian[start] + vectorian[end];
         } else if (sum < value) {
-            end--;
+            start++;
             sum = vectorian[start] + vectorian[end];
         }
     }
@@ -35,7 +35,7 @@ bool sumOfTwo(vector<int> &vectorian, const int value) {
 
 auto main() -> int {
     auto vectorio = vector<int>{20, 5, 1};
-    const auto value = 21;
+    const auto value = 40;
 //    if (sumOfTwo(vectorio, value) == true) {
 //        bool t = true;
 //    } else {
