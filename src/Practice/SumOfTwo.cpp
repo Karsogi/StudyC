@@ -24,7 +24,7 @@ bool sumOfTwo(vector<int> &vectorian, const int value) {
             sum = vectorian[start] + vectorian[end];
         }
     }
-    if (sum == value) {
+    if (sum == value && start != end) {
         cout << vectorian[end] << " " << vectorian[start] << '\n';
 //        std::this_thread::sleep_for(std::chrono::seconds(15));
         return true;

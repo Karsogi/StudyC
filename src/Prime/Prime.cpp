@@ -7,7 +7,7 @@
 #include<iostream>
 
 
-#include "Prime.h"
+
 
 using namespace std;
 

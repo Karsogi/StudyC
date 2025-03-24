@@ -5,8 +5,8 @@
 #include <vector>
 using namespace std;
  bool compare(vector<double>& vectoria, vector<double>& vasya){
-     auto last = vectoria.size() -1;
-     auto last1 = vasya.size() -1;
+     auto last = vectoria.size() ;
+     auto last1 = vasya.size() ;
     if (vectoria[last]<vasya[last1]){
         return true;
     }
@@ -14,6 +14,6 @@ using namespace std;
 }
 auto main() -> int{
      auto vectoria = vector<double>{1.0,2.2,3.5};
-     auto vasya = vector<double>{1.0,2.1,5.6};
+     auto vasya = vector<double>{1.0,2.1,5.6,7.9};
      cout << compare(vasya,vectoria);
  }

@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -33,9 +34,9 @@ auto main() -> int
     // round brackets ()
     // figure brackets {}
 
-    const auto nums = std::vector{2, 4, 5, 8, 9, 11, 13, 15};
+     auto nums = std::vector{2, 4, 5, 8, 9, 11, 13, 15};
     constexpr auto target = 4;
-
+    ranges::sort(nums);
 
     cout << sumOfTwo(nums, target);
 }

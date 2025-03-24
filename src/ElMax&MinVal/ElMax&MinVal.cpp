@@ -18,8 +18,9 @@ auto main () -> int {
         cout << score << '\n';
     }
     scores.erase(scores.begin());
-    scores.erase(scores.end()-1);
+    scores.pop_back();
     for (auto score : scores) {
         cout << score;
+
     }
 }
