@@ -1,17 +1,21 @@
 #include "fmt/ranges.h"
 #include <string>
 #include <algorithm>
+#include <ranges>
+#include <windows.h>
 using namespace std;
 
-// TODO разворачивается вся строка, а не слова в ней и ты возвращаешь не ту переменную
+// разворачивается вся строка, а не слова в ней и ты возвращаешь не ту переменную
 string reversedWords(const string& aloha){
     string alohich = aloha;
     ranges::reverse(alohich);
-    return aloha;
+    // split -> reverse -> join -> print
+    return alohich;
 }
 
 
-auto main()-> int {
+auto main()-> int
+{
     fmt::println(
             "{}\n{}\n{}\n{}",
             reversedWords("A quick brown fox"),
@@ -20,3 +24,5 @@ auto main()-> int {
             reversedWords("1 2 3")
     );
 }
+
+
