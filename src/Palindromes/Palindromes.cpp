@@ -5,6 +5,8 @@
 #include <string>
 #include <algorithm>
 
+#include <fmt/ranges.h>
+
 using namespace std;
 
 bool Palindrome(const string &aboba) {
@@ -21,5 +23,5 @@ bool Palindrome(const string &aboba) {
 auto main() -> int {
     auto hello = "asa";
     Palindrome(hello);
-    fmt::println("[]",hello);
+    fmt::println("\n{}", hello); // TODO
 }

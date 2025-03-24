@@ -4,6 +4,7 @@
 
 using namespace std;
 
+// TODO обсудить
 auto main() -> int {
     auto x = 74;
     string text = "hello!";

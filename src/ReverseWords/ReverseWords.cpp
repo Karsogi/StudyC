@@ -3,6 +3,7 @@
 #include <algorithm>
 using namespace std;
 
+// TODO разворачивается вся строка, а не слова в ней и ты возвращаешь не ту переменную
 string reversedWords(const string& aloha){
     string alohich = aloha;
     ranges::reverse(alohich);

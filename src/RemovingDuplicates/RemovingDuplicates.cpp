@@ -14,3 +14,5 @@ auto main()-> int{
     auto names = set<string>(word.begin(),word.end());
     fmt::println("{}",names);
 }
+
+// TODO обсудить

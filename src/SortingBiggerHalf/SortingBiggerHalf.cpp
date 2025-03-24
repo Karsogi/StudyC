@@ -4,6 +4,7 @@
 
 using namespace std;
 
+// TODO обсудить
 void sortBiggerHalf(vector<int> &astronavt) {
     auto firstHalfSum = 0;
     auto secondHalfSum = 0;
