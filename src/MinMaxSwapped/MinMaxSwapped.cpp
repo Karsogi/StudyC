@@ -10,34 +10,31 @@
 using namespace std;
 
 vector<int> MinMaxSwapped(vector<int> &vec) {
-    auto size = vec.size();
     auto maxIndex = 0;
-    auto element = int();
+    auto element = vec[0];
     auto lesIndex = 0;
-    auto lesser = 0;
-    for (auto i = 0; i < size; i++) {
-        auto temp = vec[i+1];
-        if(temp > size){
-            temp = size;
+    auto lesser = vec[0];
+    for (auto i = 0; i < vec.size(); i++) {
+        if (element < vec[i]) {
+            element = vec[i];
+            maxIndex = i;
         }
-        if (vec[i] > temp) {
-             maxIndex = i;
-             element = temp;
-        }
-        if (lesser < vec[i]) {
+        if (lesser > vec[i]) {
             lesser = vec[i];
             lesIndex = i;
         }
-
     }
+    auto temp = maxIndex;
     vec[maxIndex] = vec[lesIndex];
+    vec [lesIndex] = temp;
     vec[lesIndex] = element;
     return vec;
 }
+
 auto main() -> int {
-    auto vec = vector<int>{1,2,3,4,5,6};
+    auto vec = vector<int>{1, 2, -3, 5, 0, 10, -2, 1000};
     MinMaxSwapped(vec);
-    for (auto element : vec){
-        cout << element;
+    for (auto element: vec) {
+        cout << element < <'\n';
     }
 }
