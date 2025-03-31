@@ -11,23 +11,27 @@ using namespace std;
 
 vector<int> MinMaxSwapped(vector<int> &vec) {
     auto size = vec.size();
+    auto maxIndex = 0;
+    auto element = int();
+    auto lesIndex = 0;
+    auto lesser = 0;
     for (auto i = 0; i < size; i++) {
-        auto maxIndex = 0;
-        auto element = 0;
-        auto lesIndex = 0;
-        auto lesser = 0;
-
-        if (vec[i] > vec[i + 1]) {
+        auto temp = vec[i+1];
+        if(temp > size){
+            temp = size;
+        }
+        if (vec[i] > temp) {
              maxIndex = i;
-             element = vec[i];
+             element = temp;
         }
         if (lesser < vec[i]) {
             lesser = vec[i];
             lesIndex = i;
         }
-        vec[maxIndex] = vec[lesIndex];
-        vec[lesIndex] = element;
+
     }
+    vec[maxIndex] = vec[lesIndex];
+    vec[lesIndex] = element;
     return vec;
 }
 auto main() -> int {
