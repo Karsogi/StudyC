@@ -12,7 +12,7 @@ vector<int> MinMaxSwapped(vector<int> &vec) {
 }
 
 auto main() -> int {
-    auto vec = vector<int>{1, 2, 3, 4, 5, 6};
+    auto vec = vector<int>{2,1,-100,10,5};
     MinMaxSwapped(vec);
     for (auto element: vec) {
         cout << element;

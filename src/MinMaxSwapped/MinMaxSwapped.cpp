@@ -24,9 +24,7 @@ vector<int> MinMaxSwapped(vector<int> &vec) {
             lesIndex = i;
         }
     }
-    auto temp = maxIndex;
     vec[maxIndex] = vec[lesIndex];
-    vec [lesIndex] = temp;
     vec[lesIndex] = element;
     return vec;
 }
@@ -35,6 +33,6 @@ auto main() -> int {
     auto vec = vector<int>{1, 2, -3, 5, 0, 10, -2, 1000};
     MinMaxSwapped(vec);
     for (auto element: vec) {
-        cout << element < <'\n';
+        cout << element <<'\n';
     }
 }
