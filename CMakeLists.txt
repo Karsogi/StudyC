@@ -42,6 +42,7 @@ add_executable(FindingTheLongestString src/FindingTheLongestString/FindingTheLon
 add_executable(MinMaxSwapped src/MinMaxSwapped/test.cpp)
 add_executable(ModificationOfElements src/ModificationOfElements/ModificationOfElements.cpp)
 add_executable(ReducingAdjacentWhitespaceCharacters src/ReducingAdjacentWhitespaceCharacters/ReducingAdjacentWhitespaceCharacters.cpp)
+add_executable(RefactoringWithLAndA src/RefactoringWithLAndA/RefactoringWithLAndA.cpp)
 
 target_link_libraries(MyGreatest fmt)
 target_link_libraries(Test fmt)
@@ -54,3 +55,4 @@ target_link_libraries(FindingTheLongestString fmt)
 target_link_libraries(MinMaxSwapped fmt)
 target_link_libraries(ModificationOfElements fmt)
 target_link_libraries(ReducingAdjacentWhitespaceCharacters fmt)
+target_link_libraries(RefactoringWithLAndA fmt)
