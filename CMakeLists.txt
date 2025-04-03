@@ -44,7 +44,7 @@ add_executable(ModificationOfElements src/ModificationOfElements/ModificationOfE
 add_executable(ReducingAdjacentWhitespaceCharacters src/ReducingAdjacentWhitespaceCharacters/ReducingAdjacentWhitespaceCharacters.cpp)
 add_executable(RefactoringWithLAndA src/RefactoringWithLAndA/RefactoringWithLAndA.cpp)
 add_executable(AlgorithCustomVersion src/AlgorithmCustomVersion/AlgorithmCustomVersion.cpp)
-add_executable(NaturalSorting src/NaturalSorting/NaturalSorting.cpp)
+add_executable(NaturalSorting src/NaturalSorting/NaturalSortingClass.cpp)
 
 target_link_libraries(MyGreatest fmt)
 target_link_libraries(Test fmt)
