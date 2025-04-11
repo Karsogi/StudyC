@@ -45,6 +45,7 @@ add_executable(ReducingAdjacentWhitespaceCharacters src/ReducingAdjacentWhitespa
 add_executable(RefactoringWithLAndA src/RefactoringWithLAndA/RefactoringWithLAndA.cpp)
 add_executable(AlgorithCustomVersion src/AlgorithmCustomVersion/AlgorithmCustomVersion.cpp)
 add_executable(NaturalSorting src/NaturalSorting/NaturalSortingClass.cpp)
+add_executable(EnchancedLibrary src/EnchancedLibrary/EnchancedLibrary.cpp)
 
 target_link_libraries(MyGreatest fmt)
 target_link_libraries(Test fmt)
@@ -60,3 +61,4 @@ target_link_libraries(ReducingAdjacentWhitespaceCharacters fmt)
 target_link_libraries(RefactoringWithLAndA fmt)
 target_link_libraries(AlgorithCustomVersion fmt)
 target_link_libraries(NaturalSorting fmt)
+target_link_libraries(EnchancedLibrary fmt)
