@@ -41,13 +41,29 @@ vector<string> naturalSorting(vector<string> &vec) {
     return sortedVector;
 }
 auto main() -> int {
-    auto fileNames = std::vector<std::string>{
+    auto lectures = std::vector<std::string>{
             "lecture 1", "lecture 2", "lecture 3",
             "lecture 10", "lecture 11", "lecture 12",
             "lecture 35", "lecture 39", "lecture 92",
             "lecture 101", "lecture 111", "lecture 133",
-            "lecture 159", "lecture 100", "lecture 221"
+            "lecture 159", "lecture 221"
     };
+
+    auto numbers = std::vector{1, 3, -10, 100, 36, 12, 489};
+    std::ranges::sort(numbers);
+    fmt::println("{}", numbers);
+    std::ranges::sort(numbers, [](const int a, const int b) {
+        return a > b;
+    });
+    fmt::println("{}", numbers);
+
+    auto fileNames = std::vector<std::string>{
+        "file1.txt", "file10.txt","file11.txt","file2.txt","file20.txt","file3.txt"
+    };
+
+    auto str1 = "file120";
+    auto str2 = "file2";
+
     naturalSorting(fileNames);
 
     fmt::println("{}", fmt::join(fileNames, "\n"));
